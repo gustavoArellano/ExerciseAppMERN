@@ -30,3 +30,5 @@ env
 ./backend/.env
 ./backend/env
 ./backed/*env
+
+node_modules
