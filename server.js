@@ -36,7 +36,7 @@ app.use('/users', usersRouter);
 
 // WHEN IN DEPLOYING, ADD THE BELOW
 if (process.env.NODE_ENV === 'production') {
-    app.use((express.static('build')))
+    app.use((express.static('frontend/build')))
 }
 
 app.listen(port, () => {
