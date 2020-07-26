@@ -36,6 +36,7 @@ class ExerciseList extends Component {
     deleteExercise(id) {
         axios.delete('/exercises/' + id)
             .then(res => console.log(res.data));
+            alert("Exercise deleted! 🗑️")
         this.setState({
             exercises: this.state.exercises.filter(exerciseElement => exerciseElement._id !== id)
         })

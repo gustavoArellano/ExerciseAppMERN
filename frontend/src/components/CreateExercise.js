@@ -71,7 +71,7 @@ class CreateExercise extends Component {
         axios.post('/exercises/add', exercise)
         .then(res => console.log(res.data))
 
-        alert("Exercise added :)")
+        alert("Exercise added 🏋️‍♂️")
     }
 
 
