@@ -72,6 +72,12 @@ class CreateExercise extends Component {
         .then(res => console.log(res.data))
 
         alert("Exercise added 🏋️‍♂️")
+
+        this.setState({
+            description: '',
+            duration: 0,
+            date: new Date(),
+        })
     }
 
 
