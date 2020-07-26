@@ -15,7 +15,7 @@ app.use(express.json());
 // app.use(bodyParser.json());
 
 // GRAPPING THE ATLAS_URI FROM ENV FILE CONTAINING KEY
-const uri = process.env.ATLAS_URI;
+// const uri = process.env.ATLAS_URI;
 // CONNECTS THE DATABASE, ALONG WITH PARSER AND INDEX AS TRUE
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 

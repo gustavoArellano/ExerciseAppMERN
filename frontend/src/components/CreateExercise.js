@@ -22,7 +22,7 @@ class CreateExercise extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/users/')
+        axios.get('/users/')
             .then(response => {
                 if (response.data.length > 0) {
                     this.setState({
@@ -68,7 +68,7 @@ class CreateExercise extends Component {
         }
         console.log(exercise);
 
-        axios.post('http://localhost:5000/exercises/add', exercise)
+        axios.post('/exercises/add', exercise)
         .then(res => console.log(res.data))
 
         alert("Exercise added :)")
