@@ -29,7 +29,7 @@ class CreateUser extends Component {
 
         axios.post('/users/add', user)
             .then(res => console.log(res.data));
-            alert("User created 😎")
+            alert("User created! 😎")
 
         this.setState({
             username: ''
